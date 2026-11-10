@@ -1,0 +1,2 @@
+# 空文件也可以。urllib / ssl / json 都是 Python 标准库，零三方依赖。
+# 留着这个文件是 Vercel Python Runtime 识别项目的最佳实践。

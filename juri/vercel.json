@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "functions": {
+    "api/proxy.py": {
+      "runtime": "python3.9",
+      "timeout": 15
+    }
+  },
+  "rewrites": [
+    { "source": "/proxy(.*)", "destination": "/api/proxy.py" }
+  ]
+}

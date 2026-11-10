@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>法英选题工作台 · Legal English Topic Desk</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="topbar-left">
+        <div class="brand">
+          <span class="brand-mark">⚖</span>
+          <div class="brand-text">
+            <span class="brand-title">法英选题工作台</span>
+            <span class="brand-sub">Legal English Topic Desk</span>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#/dashboard" data-route="dashboard">工作台</a>
+          <a href="#/topics" data-route="topics">选题列表</a>
+          <a href="#/sources" data-route="sources">来源管理</a>
+          <a href="#/settings" data-route="settings">偏好设置</a>
+        </nav>
+      </div>
+      <div class="topbar-right">
+        <span class="data-badge" id="dataBadge">演示数据</span>
+        <button class="btn btn-ghost" id="refreshBtn" title="重新采集演示数据">↻ 刷新</button>
+      </div>
+    </header>
+
+    <main id="view" class="view">
+      <div class="loading">加载中…</div>
+    </main>
+
+    <div id="toast" class="toast" hidden></div>
+    <div id="modal" class="modal" hidden>
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-card" id="modalCard"></div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
